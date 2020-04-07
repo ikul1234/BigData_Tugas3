@@ -1,6 +1,4 @@
-## Bigdata 2020
-
-# Dokumentasi Praktek Recommendation System menggunakan KNIME
+# Tugas3_BigData_05111740000169
 
 - [Dokumentasi Praktek Recommendation System menggunakan KNIME](#dokumentasi-praktek-recommendation-system-menggunakan-knime)
 - [Business Understanding](#business-understanding)
@@ -16,13 +14,13 @@
 - [susunan KNIME](#susunan-knime)
 - [3.Perbandingan menggunakan timer info](#3perbandingan-menggunakan-timer-info)
 
-# Business Understanding
+## Business Understanding
 Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 1. Dari data tersebut, dapat dilakukan proses untuk melihat rekomendasi film terbaik yang dinilai oleh sebelumnya
 2. Dari data tersebut, dapat dilihat berupa kumpulan data dengan isi kumpulan film yang disertai dengan ratings
 3. Dari data tersebut, dapat dilakukan proses evaluasi serta filtering agar menghasilkan 10 film terbaik yang sudah dinilai sebelumnya
 
-# Data Understanding
+## Data Understanding
 
 - Dataset menggambarkan penilaian dari movielens sebagai pelayanan movie recommendation, dataset ini berisi 20000263<br>
   peringkat, data ini dibuat oleh 138493 pengguna dari tanggal 09 januari 1995 sampai 31 maret 2015. dataset ini berisi<br>
@@ -64,7 +62,7 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
   
 - Source dataset : https://grouplens.org/datasets/movielens/
 
-# Data Preparation
+## Data Preparation
 
 - data disiapkan dengan dua cara, yang satu menyiapkan data yang didownload dari link di atas, <br/>
   karena berbentuk csv dan menyiapkan data   yang menggunakan spark. dua persiapan tersebut dilakukan<br/> 
@@ -125,13 +123,13 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 - pastikan memilih persen dan memilih draw randomly.<br>
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/conf_partition.PNG "add field")<br>
 
-# Modeling
+## Modeling
 
 - proses modeling dimulai ketika menggabungkan data di node spark concatenate, dan node dari ini untuk<br>
   menjalankan algoritma buat modeling dengan memakai data training set, yang nantinya akan di tes dengan test-set.<br/>
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/model.PNG "add field")<br>
 
-# Evaluation
+## Evaluation
 
 - data yang sudah diprediksi berupa seperti ini
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/hasilprediksi.PNG "add field")<br>
@@ -144,7 +142,7 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
   ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/hasil_prediksi.PNG "add field")<br>
  
 
-# Deployment
+## Deployment
 
 - workflow ini akan mendisplay 10 peringkat prediksi film rekomendasi<br/>
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/deploy.PNG " asli csv")<br/>
@@ -175,11 +173,11 @@ Kemungkinan-kemungkinan yg dapat dilakukan yaitu:
 - hasil yang didapati adalah sebagai berikut sesuai dengan arahan untuk memberi best 10 movie<br>
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/hasil_done.PNG " asli csv")<br/>
 
-# susunan KNIME
+## susunan KNIME
 susunan KNIME seperti berikut
 ![alt text](https://github.com/farizmpr/Bigdata-2020/blob/master/tugas_3/picture/arsitek.PNG " asli csv")<br/>
 
-# 3.Perbandingan menggunakan timer info
+## 3.Perbandingan menggunakan timer info
 
 - untuk melakukan perbandingan antara csv to spark dengan reader, kita harus menambahkan node seperti berikut<br> 
   dan mengarahkan kepada data csv yang sama<br/>
