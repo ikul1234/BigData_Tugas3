@@ -1,6 +1,5 @@
 # Tugas3_BigData_05111740000169
 
-- [Dokumentasi Praktek Recommendation System menggunakan KNIME](#dokumentasi-praktek-recommendation-system-menggunakan-knime)
 - [Business Understanding](#business-understanding)
 - [Data Understanding](#data-understanding)
 - [Data Preparation](#data-preparation)
